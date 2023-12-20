@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <label for="">number</label>
+      <input type="text" id="number" />
+    </div>
+
+    <div>
+      <button onClick="carpma()">çarp</button>
+    </div>
+  </body>
+  <script>
+    function carpma() {
+      const number = document.getElementById('number').value
+      if (isNaN(number)) {
+        alert('bu değer geçersiz. Lütfen sayı giriniz.')
+      } else {
+        const sonuc = (number * 1.8).toFixed(2)
+        alert('Çarpım Sonucu: ' + sonuc)
+      }
+    }
+  </script>
+</html>

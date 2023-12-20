@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <label for="">Birinci Sayı</label>
+      <input type="text" id="number1" />
+    </div>
+
+    <div>
+      <label for="">İkinci Sayı</label>
+      <input type="text" id="number2" />
+    </div>
+
+    <div>
+      <button onclick="toplama()">toplama</button>
+      <button onclick="cikarma()">çıkarma</button>
+      <button onclick="carpma()">çarpma</button>
+      <button onclick="bolme()">bölme</button>
+    </div>
+  </body>
+  <script>
+    function toplama() {
+      const firstNum = parseInt(document.getElementById('number1').value)
+      const secondNum = parseInt(document.getElementById('number2').value)
+      const sonuc = (firstNum + secondNum).toFixed(5)
+      alert(`Toplama işlemi sonucu ${sonuc}`)
+    }
+
+    function cikarma() {
+      const firstNum = parseInt(document.getElementById('number1').value)
+      const secondNum = parseInt(document.getElementById('number2').value)
+      const sonuc = (firstNum - secondNum).toFixed(5)
+      alert(`Çıkarma işlemi sonucu ${sonuc}`)
+    }
+
+    function carpma() {
+      const firstNum = parseInt(document.getElementById('number1').value)
+      const secondNum = parseInt(document.getElementById('number2').value)
+      const sonuc = (firstNum * secondNum).toFixed(5)
+      alert(`Çarpma işlemi sonucu ${sonuc}`)
+    }
+
+    function bolme() {
+      const firstNum = parseInt(document.getElementById('number1').value)
+      const secondNum = parseInt(document.getElementById('number2').value)
+      const sonuc = (firstNum / secondNum).toFixed(5)
+      alert(`Bölme işlemi sonucu ${sonuc}`)
+    }
+  </script>
+</html>
